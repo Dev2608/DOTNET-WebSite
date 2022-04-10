@@ -8,14 +8,16 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
         <!-- This is for common CSS-->
         <style type="text/css">
-             .bodyWrap
-            {
-                width: 500px;
+
+             .header {
+                text-align: center;
             }
-            .header, .content, .footer
-            {
-                width: 100%;
-                float:left;
+            #Footer {
+                    position: fixed;
+                    bottom: 0px;
+           }
+            .footer {
+                text-align: center;
             }
         </style>
     </asp:ContentPlaceHolder>
@@ -36,7 +38,7 @@
                 </asp:ContentPlaceHolder>
             </div>
         
-            <div class="footer"> All Rights Reserved By Jainish Devendra and Kandarp &copy; 2022 </div>
+            <div id="Footer" class="footer"> All Rights Reserved By Jainish Devendra and Kandarp &copy; 2022 </div>
 
         </div>
 

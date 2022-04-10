@@ -14,10 +14,7 @@
         }
         .auto-style3 {
             text-align: center;
-            font-size: 30px;            
-            font-weight: 700;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-            color: rgb(4 81 239);
+            font-size: 30px;
         }
         .auto-style4 {
             width: 288px;
