@@ -71,7 +71,13 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Themes\Theme2\css1.css" />
+    <Content Include="images\BackGround.jpg" />
+    <Content Include="images\bg1.jpg" />
+    <Content Include="images\bg2.jpg" />
+    <Content Include="images\bg3.jpg" />
     <Content Include="ShowData.aspx" />
+    <Content Include="showDetail.aspx" />
     <Content Include="signupPage.aspx" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
@@ -99,6 +105,13 @@
     <Compile Include="ShowData.aspx.designer.cs">
       <DependentUpon>ShowData.aspx</DependentUpon>
     </Compile>
+    <Compile Include="showDetail.aspx.cs">
+      <DependentUpon>showDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="showDetail.aspx.designer.cs">
+      <DependentUpon>showDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="signupPage.aspx.cs">
       <DependentUpon>signupPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,6 +121,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\Theme1\Skin1.skin" />
     <None Include="packages.config" />
     <Content Include="MasterPage.Master" />
     <None Include="Web.Debug.config">
@@ -117,6 +131,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

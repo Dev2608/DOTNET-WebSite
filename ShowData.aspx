@@ -1,11 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="ShowData.aspx.cs" Inherits="AssignmentProject_DOTNET.ShowData" %>
+﻿<%@ Page Title="" Language="C#" Theme="Theme2" AutoEventWireup="true" CodeBehind="ShowData.aspx.cs" Inherits="AssignmentProject_DOTNET.ShowData" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- this is for css-->
     <style type="text/css">
         .auto-style1 {
             width: 425px;
             margin: auto;
-            border: 2px solid #000000;
+            /*border: 2px solid #000000;*/
+            background: rgb(255 0 255 / 0.04);
         }
         .auto-style2 {
             text-align: center;
@@ -14,11 +15,16 @@
         .auto-style3 {
             width: 179px;
         }
-        .auto-style4 {
+        /*.auto-style4 {
             text-align: center;
             margin: auto;
             position: relative;
-            left: 470px;
+            
+        }*/
+        .auto-style5 {
+            width: 425px;
+            margin: auto;
+            text-align: center;
         }
     </style>
 </asp:Content>
@@ -53,8 +59,19 @@
             </tr>
         </table>
         <br />
-        <br />
-        <asp:Button ID="ButtonLogout" CssClass="auto-style4" runat="server" Height="32px" OnClick="Button1_Click" Text="LOGOUT" Width="74px" />
+        <br />        
+    </div>
 
+    <div>
+        <%--<asp:Button ID="ButtonLogout" runat="server" Height="32px" OnClick="Button1_Click" Text="LOGOUT" Width="74px" />
+        <asp:Button ID="ButtonShow" runat="server" Height="32px" Text="SHOW ALL" Width="74px" />--%>
+        
+        <table cellpadding="4" cellspacing="4" class="auto-style5">
+            <tr>
+                <td><asp:Button ID="ButtonLogout" runat="server" Height="32px" OnClick="ButtonLogout_Click" Text="LOGOUT" Width="74px" /></td>
+                <td><asp:Button ID="ButtonShow" runat="server" Height="32px" Text="SHOW ALL" Width="74px" OnClick="ButtonShow_Click" /></td>
+            </tr>
+        </table>
+        
     </div>
 </asp:Content>

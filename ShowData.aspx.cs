@@ -25,7 +25,7 @@ namespace AssignmentProject_DOTNET
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void ButtonLogout_Click(object sender, EventArgs e)
         {
             if(Session["user"] != null)
             {
@@ -52,15 +52,17 @@ namespace AssignmentProject_DOTNET
 
             if (check > 0)
             {
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('Data Added Successfully')<script/>");
+                //Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('Data Added Successfully')<script/>");
                 if(CpiDetail > 8.0)
                 {
-                    Response.Write("You Are Eligible for Placements!!");
+                    //Response.Write("You Are Eligible for Placements!!");
+                    //Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('Login Failed !!! ')</script>");
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('You Are Eligible For Placements');</script>");                    
                 }
                 else
                 {
-                    //Page.ClientScript.RegisterStartupScript(this.GetType(), "scripts", "<script>alert('You are Not Eligible for Placements')<script/>");
-                    Response.Write("You Are NOT Eligible for Placements!!");
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "Scripts", "<script>alert('You Are NOT Eligible For Placements');</script>");
+                    //Response.Write("You Are NOT Eligible for Placements!!");
                 }
             }
             else
@@ -69,6 +71,11 @@ namespace AssignmentProject_DOTNET
             }
 
             con.Close();
+        }
+
+        protected void ButtonShow_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("showDetail.aspx");
         }
     }
 }

@@ -1,13 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="signupPage.aspx.cs" Inherits="AssignmentProject_DOTNET.signupPage" %>
+﻿<%@ Page Title="" Language="C#" Theme="Theme2" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="signupPage.aspx.cs" Inherits="AssignmentProject_DOTNET.signupPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
             width: 425px;
             margin: auto;
-            border: 2px solid #000000;
+            /*border: 2px solid #000000;*/
+            background: rgb(255 0 255 / 0.04);
         }
         .auto-style2 {
             width: 174px;
+            /*border: 2px solid #000000;
+            border-radius: 20px;*/
         }
         .auto-style3 {
             text-align: center;

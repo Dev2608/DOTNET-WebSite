@@ -7,25 +7,36 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
         <!-- This is for common CSS-->
+        <style type="text/css">
+             .bodyWrap
+            {
+                width: 500px;
+            }
+            .header, .content, .footer
+            {
+                width: 100%;
+                float:left;
+            }
+        </style>
     </asp:ContentPlaceHolder>
+
 </head>
 <body>
     <form id="form1" runat="server">
-
-        <div class="wrapper">
+        
+        <div class="bodywrap">
             <div class="header">
-                <h1>Header!!!</h1>
+            <h1 class="design">Placement Eligibility Checking System</h1>
             </div>
 
             <div class="content">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
+
                 </asp:ContentPlaceHolder>
             </div>
-
-            <div class="footer">
-                <h1>Footer!!!</h1>
-            </div>
+        
+            <div class="footer"> All Rights Reserved By Jainish Devendra and Kandarp &copy; 2022 </div>
 
         </div>
 
